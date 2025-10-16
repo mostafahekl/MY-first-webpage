@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أحمد جمال سعيد محمود - 20231334</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            line-height: 1.6;
+            min-height: 100vh;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .container {
+            max-width: 1000px;
+            width: 100%;
+        }
+        
+        .profile-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+        
+        .profile-header {
+            background: linear-gradient(to right, #4A00E0, #8E2DE2);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .student-id {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            backdrop-filter: blur(5px);
+        }
+        
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin: 0 auto 20px;
+            background-color: #f1f1f1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 50px;
+            color: #4A00E0;
+        }
+        
+        .profile-name {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        
+        .profile-title {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+        
+        .profile-content {
+            padding: 30px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .section-title {
+            font-size: 22px;
+            color: #4A00E0;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .info-item {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #4A00E0;
+        }
+        
+        .info-label {
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 5px;
+        }
+        
+        .links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        
+        .link-card {
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: #333;
+        }
+        
+        .link-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-color: #4A00E0;
+        }
+        
+        .link-icon {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #4A00E0;
+        }
+        
+        .link-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .link-desc {
+            font-size: 14px;
+            color: #666;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            background: #f0f0f0;
+            padding: 10px 15px;
+            border-radius: 30px;
+        }
+        
+        .contact-icon {
+            margin-left: 8px;
+            color: #4A00E0;
+        }
+        
+        @media (max-width: 768px) {
+            .profile-header {
+                padding: 30px 20px;
+            }
+            
+            .profile-name {
+                font-size: 26px;
+            }
+            
+            .info-grid, .links-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .student-id {
+                position: static;
+                display: inline-block;
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-card">
+            <div class="profile-header">
+                <div class="student-id">الرقم الجامعي: 20231334</div>
+                <div class="profile-pic">أ</div>
+                <h1 class="profile-name">أحمد جمال سعيد محمود</h1>
+                <p class="profile-title">طالب هندسة حاسوب</p>
+            </div>
+            
+            <div class="profile-content">
+                <div class="section">
+                    <h2 class="section-title">معلومات شخصية</h2>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <div class="info-label">الاسم الكامل</div>
+                            <div>أحمد جمال سعيد محمود</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">الرقم الجامعي</div>
+                            <div>20231334</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">التخصص</div>
+                            <div>هندسة الحاسوب</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">المستوى</div>
+                            <div>السنة الثالثة</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <h2 class="section-title">روابط البيانات</h2>
+                    <div class="links-grid">
+                        <a href="#" class="link-card">
+                            <div class="link-icon">📁</div>
+                            <div class="link-title">السيرة الذاتية</div>
+                            <div class="link-desc">تحميل السيرة الذاتية PDF</div>
+                        </a>
+                        <a href="#" class="link-card">
+                            <div class="link-icon">💼</div>
+                            <div class="link-title">المشاريع</div>
+                            <div class="link-desc">معرض أعمالي السابقة</div>
+                        </a>
+                        <a href="#" class="link-card">
+                            <div class="link-icon">📊</div>
+                            <div class="link-title">التقارير</div>
+                            <div class="link-desc">تقارير الأداء والإنجازات</div>
+                        </a>
+                        <a href="#" class="link-card">
+                            <div class="link-icon">📝</div>
+                            <div class="link-title">المقالات</div>
+                            <div class="link-desc">مقالاتي في تطوير الويب</div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <h2 class="section-title">معلومات الاتصال</h2>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <span>ahmed.jamal@example.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📱</span>
+                            <span>+20 123 456 7890</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">🏫</span>
+                            <span>جامعة القاهرة</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
